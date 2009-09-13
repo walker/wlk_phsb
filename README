@@ -1,6 +1,8 @@
-This is a plugin for Textpattern built by Walker Hamilton (http://walkerhamilton.com) that enables the use of RSSCloud. Portions of this plugin are based on the plugin initially implemented by Joseph Scott (http://josephscott.org/). You should really use PubSubHubBub and not RSSCloud, but, since Worpress had this thing running, I figured Textpattern should have the ability too.
+This is a plugin for Textpattern built by Walker Hamilton (http://walkerhamilton.com) that enables the use of PubSubHubBub protocol to announcu when new content has been posted to the weblog.
 
-To install, grab the current version of the compressed plugin (wlk_rsscloud.txt) and paste into the plugin field in Textpattern.
+The publisher class was written by Josh Frazer (joshfraser.com) before being modified slightly for use here. Josh also wrote the Wordpress plugin that I based this plugin on.
+
+To install, grab the current version of the compressed plugin (wlk_phsb.txt) and paste into the plugin field in Textpattern.
 
 As long as it's been installed & activated, you're ready to go.
 
