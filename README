@@ -1,6 +1,6 @@
 This is a plugin for Textpattern built by Walker Hamilton (http://walkerhamilton.com) that enables the use of PubSubHubBub protocol to announcu when new content has been posted to the weblog.
 
-The publisher class was written by Josh Frazer (joshfraser.com) before being modified slightly for use here. Josh also wrote the Wordpress plugin that I based this plugin on.
+The publisher class was written by Josh Frazer (joshfraser.com) before being modified slightly for use here. Josh also wrote the Wordpress plugin that I based this plugin on. Also, I got alot of the issues that needed to be figured out dealt with when building wlk_rsscloud.
 
 To install, grab the current version of the compressed plugin (wlk_phsb.txt) and paste into the plugin field in Textpattern.
 
