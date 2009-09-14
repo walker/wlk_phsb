@@ -321,10 +321,12 @@ class Publisher {
 	function __construct($hub_url, $ua=null) {
 		
 		if (!isset($hub_url))
-			throw new Exception('Please specify a hub url');
+			return false;
+			// throw new Exception('Please specify a hub url');
 		
 		if (!preg_match("|^https?://|i",$hub_url)) 
-			throw new Exception('The specified hub url does not appear to be valid: '.$hub_url);
+			return false;
+			// throw new Exception('The specified hub url does not appear to be valid: '.$hub_url);
 		
 		$this->hub_url = $hub_url;
 		if($ua) {
@@ -339,7 +341,8 @@ class Publisher {
 	// accepts either a single url or an array of urls
 	function publish_update($topic_urls, $http_function = false) {
 		if (!isset($topic_urls))
-			throw new Exception('Please specify a topic url');
+			return false;
+			// throw new Exception('Please specify a topic url');
 		
 		// check that we're working with an array
 		if (!is_array($topic_urls)) {
@@ -353,7 +356,8 @@ class Publisher {
 			
 			// lightweight check that we're actually working w/ a valid url
 			if (!preg_match("|^https?://|i",$topic_url))
-				throw new Exception('The specified topic url does not appear to be valid: '.$topic_url);
+				return false;
+				// throw new Exception('The specified topic url does not appear to be valid: '.$topic_url);
 				
 			// append the topic url parameters
 			$post_string .= "&hub.url=".urlencode($topic_url);
