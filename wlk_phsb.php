@@ -155,7 +155,7 @@ class WlkPhsbClass {
 		$send_ud = false;
 		if(!empty($_POST) && isset($_POST['ID'])) {
 			if(is_numeric($_POST['ID'])) {
-				$a = safe_row('Status', 'textpattern', 'ID='.intval($id));
+				$a = safe_row('Status', 'textpattern', 'ID='.intval($_POST['id']));
 				if ($a) {
 					if($uExpires and time() > $uExpires and !$prefs['publish_expired_articles']) {
 						$send_ud = false;
